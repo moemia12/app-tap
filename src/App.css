@@ -6,17 +6,17 @@
 }
 
 /* BroadbandDeals Styles*/ 
-.container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 .dealsContainer{
-  margin: 10rem;
+  margin: 60px;
   background-color: white;
   padding: 3rem;
   border-radius: 5%;
+}
+.container{
+
+  border: 10px solid 'black';
+
 }
 
 .companyName{
@@ -25,7 +25,6 @@
   align-items: center;
   margin: 2rem;
   padding: 1rem;
-  
 }
 
 .companyInfo{
@@ -38,5 +37,13 @@
 .price{
   display: flex;
   flex-direction: column;
- 
+
+  border: 5px solid #1C6EA4;
+  padding: 1rem;
+}
+.prices{
+  flex-grow: 1;
+  display:flex;
+  justify-content: space-evenly;
+  
 }
