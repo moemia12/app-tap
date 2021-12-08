@@ -42,7 +42,7 @@ function BroadbandDeals() {
                                     <img src={deals.provider_logo_image_url} alt='logo' style={{ width: '15%' }}></img>
 
                                     <div style={style.title}>
-                                        <strong>{deals.provider_name}</strong>
+                                        <h3><strong>{deals.provider_name}</strong></h3>
                                         {deals.deal_name}
                                     </div>
                                 </TableCell>
@@ -63,8 +63,8 @@ function BroadbandDeals() {
                                     <strong>{deals.contract_info}</strong>
                                     <br/>Contract Length
                                     </TableCell>
-                                <Button style={{ marginBottom: 90, border: '1px solid #0096FF', marginRight: 10 }}>Add to Compare</Button>
-                                <Button style={{ marginBottom: 90, backgroundColor: '#0096FF', color: 'white' }}>More Info</Button>
+                                <Button style={{ marginBottom: 90, border: '1px solid #0096FF', marginRight: 10, right: 190 }}>Add to Compare</Button>
+                                <Button style={{ marginBottom: 90, backgroundColor: '#0096FF', color: 'white', right: 160 }}>More Info</Button>
                             </TableRow>
                         ))}
                     </TableBody>
@@ -87,6 +87,7 @@ const style = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'left',
+        justifyContent: 'space-evenly'
     },
     item: {
         position: 'relative',
